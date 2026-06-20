@@ -9,6 +9,7 @@ import Signin from './components/Signin.jsx'
 import Cart from './components/Cart.jsx'
 import Body from './components/Body.jsx'
 import Error from './components/Error.jsx'
+import RestaurantDetails from './components/RestaurantDetails.jsx'
 
 const appRouter = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const appRouter = createBrowserRouter([
         {
           path: '/cart',
           element: <Cart />
+        },
+        {
+          path:'/restaurant/:idd',
+          element: <RestaurantDetails/>
         }
     ]
   }
