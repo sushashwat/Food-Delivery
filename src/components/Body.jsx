@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import RestaurantCard from './RestaurantCard'
-import ApiCalling from './ApiCalling'
+import useApiCalling from './ApiCalling'
 import Search from './Search';
 
 function Body() {
 
-    let restArray = ApiCalling();
+    let restArray = useApiCalling();
 
     let [allRestArray,setAllRestArr] = useState(restArray)
 
