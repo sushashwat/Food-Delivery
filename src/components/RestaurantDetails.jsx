@@ -29,7 +29,7 @@ function RestaurantDetails() {
         {
             foodItemDetails.map((foodItem)=>{
                 return (
-                    <div className="flex w-3/4 mx-auto mb-10 border-b-4 p-4">
+                    <div key ={foodItem.card.info.id} className="flex w-3/4 mx-auto mb-10 border-b-4 p-4">
                         <div className="flex flex-col w-3/4">
                         <h1>{foodItem.card.info.name}</h1>
                         <h1>{foodItem.card.info.price / 100}</h1>
